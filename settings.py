@@ -42,7 +42,7 @@ FREE_PROXY_URL_5 = 'http://proxydb.net'                                  # 网�
 
 # 需翻墙的网站：
 FREE_PROXY_URL_6 = 'http://free-proxy.cz'                                # 网站：FreeProxy     ip地区：全球 是否可选位置：是
-FREE_PROXY_URL_7 = 'https://spys.one'                                    # 网站：spys          ip地区：全球 是否可选位置：是
+FREE_PROXY_URL_7 = 'https://spys.one'                                    # 网站：Spys          ip地区：全球 是否可选位置：是
 FREE_PROXY_URL_8 = 'https://premproxy.com/list'                          # 网站：PremProxy     ip地区：全球 是否可选位置：否
 FREE_PROXY_URL_9 = 'https://free-proxy-list.net'                         # 网站：FreeProxyList ip地区：全球 是否可选位置：是
 FREE_PROXY_URL_10 = 'https://www.proxynova.com/proxy-server-list'        # 网站：ProxyNova     ip地区：全球 是否可选位置：是
