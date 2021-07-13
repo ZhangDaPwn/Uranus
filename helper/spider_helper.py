@@ -16,7 +16,7 @@ import requests
 import random
 import time
 
-from ..handler.log_handler import LogHandler
+from handler.log_handler import LogHandler
 
 requests.packages.urllib3.disable_warnings()  # 屏蔽https证书警告
 

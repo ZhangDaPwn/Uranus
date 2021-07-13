@@ -5,13 +5,75 @@
 # @File     : settings.py
 # @Software : PyCharm
 
+BANNER = r"""
+      ___           ___           ___           ___           ___           ___     
+     /__/\         /  /\         /  /\         /__/\         /__/\         /  /\    
+     \  \:\       /  /::\       /  /::\        \  \:\        \  \:\       /  /:/_   
+      \  \:\     /  /:/\:\     /  /:/\:\        \  \:\        \  \:\     /  /:/ /\  
+  ___  \  \:\   /  /:/ /:/    /  /:/ /::\   _____\__\:\   ___  \  \:\   /  /:/ /::\ 
+ /__/\  \__\:\ /__/:/ /:/___ /__/:/ /:/\:\ /__/::::::::\ /__/\  \__\:\ /__/:/ /:/\:\
+ \  \:\ /  /:/ \  \:\/:::::/ \  \:\/:/__\/ \  \:\--\--\/ \  \:\ /  /:/ \  \:\/:/ /:/
+  \  \:\  /:/   \  \::/````   \  \::/       \  \:\        \  \:\  /:/   \  \::/ /:/ 
+   \  \:\/:/     \  \:\        \  \:\        \  \:\        \  \:\/:/     \__\/ /:/  
+    \  \::/       \  \:\        \  \:\        \  \:\        \  \::/        /__/:/   
+     \__\/         \__\/         \__\/         \__\/         \__\/         \__\/    
+"""
+# banner 生成地址：http://www.network-science.de/ascii/  Font：isometric3
 
+VERSION = "1.0.0"
 
+# ############### server config ###############
+HOST = "0.0.0.0"
 
+PORT = 4399
 
+# ############### database config ###################
+# db connection uri
+# example:
+#      Redis: redis://:password@ip:port/db
+#      Ssdb:  ssdb://:password@ip:port
+DB_CONN = 'redis://:vango123@127.0.0.1:6379/0'
 
+# proxy table name
+TABLE_NAME = 'use_proxy'
 
+# ###### config the proxy fetch function ######
+PROXY_FETCHER = [
+    "free_proxy_0",
+    # "free_proxy_1",
+    "free_proxy_2",
+    # "free_proxy_3",
+    # "free_proxy_4",
+    # "free_proxy_5",
+    # "free_proxy_6",
+    # "free_proxy_7",
+    # "free_proxy_8",
+    # "free_proxy_9",
+    # "free_proxy_10"
+]
 
+# ############# proxy validator #################
+# 代理验证目标网站
+HTTP_URL = "http://httpbin.org"
+
+HTTPS_URL = "https://www.qq.com"
+
+# 代理验证时超时时间
+VERIFY_TIMEOUT = 10
+
+# 近PROXY_CHECK_COUNT次校验中允许的最大失败次数,超过则剔除代理
+MAX_FAIL_COUNT = 0
+
+# 近PROXY_CHECK_COUNT次校验中允许的最大失败率,超过则剔除代理
+# MAX_FAIL_RATE = 0.1
+
+# proxyCheck时代理数量少于POOL_SIZE_MIN触发抓取
+POOL_SIZE_MIN = 20
+
+TIMEZONE = "Asia/Shanghai"
+
+# 多线程检测代理，线程数
+THREAD_NUM = 20
 
 
 
